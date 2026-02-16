@@ -1,0 +1,169 @@
+/* GENERAL */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #e6f7fb 0%, #ffffff 100%);
+    color: #333;
+    margin: 0; padding: 0;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+/* HEADER */
+header {
+    padding: 30px 20px 10px 20px;
+    background-color: #1d7aa0;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+header h1 { font-size: 3em; margin:0; }
+header p { font-size: 1.2em; margin:5px 0 0 0; }
+
+/* MESSAGE BAR */
+#message-bar {
+    position: fixed;
+    top: 20px; left: 50%;
+    transform: translateX(-50%);
+    background: #4caf50;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    opacity:0;
+    transition: opacity 0.5s, transform 0.5s;
+    z-index:1000;
+}
+
+/* SECTIONS */
+section {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 25px auto;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+}
+h2 { color:#1d7aa0; font-size:2em; margin:15px 0; }
+
+/* INPUTS */
+input {
+    padding: 12px;
+    margin: 8px;
+    border-radius: 10px;
+    border: 1px solid #a0d8f1;
+    width: 80%;
+    font-size:1em;
+}
+input:focus { border-color:#1d7aa0; box-shadow:0 0 5px rgba(29,122,160,0.5); }
+
+/* BUTTONS */
+button {
+    background:#1d7aa0;
+    color:#fff;
+    border:none;
+    padding:10px 18px;
+    margin:5px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    font-size:0.95em;
+    transition:0.3s;
+}
+button:hover { background:#a0d8f1; color:#1d7aa0; transform: translateY(-2px); }
+
+/* FLASHCARDS */
+.flashcard {
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    width:420px;
+    height:220px;
+    margin:25px auto;
+    background:#ffffff;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.4em;
+    text-align:center;
+    padding: 15px;
+    box-sizing:border-box;
+}
+
+/* NEXT BUTTON */
+#next-card { margin-top:10px; }
+
+/* EDIT BACK BUTTON */
+.back-btn {
+    background: #a0d8f1;
+    color: #1d7aa0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+.back-btn:hover { background: #1d7aa0; color: #fff; transform: translateY(-2px); }
+
+/* EDIT FLASHCARDS BOXES */
+#edit-display .edit-card {
+    background: #e6f7fb; 
+    border-radius: 15px;
+    padding: 15px;
+    margin: 12px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+#edit-display .edit-card:hover { transform: translateY(-2px); }
+#edit-display .edit-card input {
+    width: 90%;
+    margin: 5px 0;
+    padding: 8px;
+    font-size: 0.95em;
+    border-radius: 8px;
+    border: 1px solid #a0d8f1;
+}
+#edit-display .edit-card button {
+    padding: 6px 12px;
+    font-size: 0.85em;
+    margin: 3px;
+    border-radius: 8px;
+    cursor: pointer;
+    background:#1d7aa0;
+    color:#fff;
+    border:none;
+    transition: 0.3s;
+}
+#edit-display .edit-card button:hover {
+    background:#a0d8f1;
+    color:#1d7aa0;
+}
+#edit-display .edit-card div {
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    margin-top:5px;
+}
+
+/* FOOTER */
+footer {
+    margin-top:40px; padding:20px;
+    background:#1d7aa0;
+    color:#fff;
+    text-align:center;
+}
+footer .footer-content {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+}
+.footer-logo { width:50px; height:auto; border-radius:5px; }
+footer a { color:#fff; text-decoration:underline; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .flashcard, section { width: 90%; }
+}

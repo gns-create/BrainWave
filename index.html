@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrainWave - Flashcards & Quizzes</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>BrainWave</h1>
+    <p>Smart Flashcards & Quizzes for Efficient Learning</p>
+</header>
+
+<div id="message-bar"></div>
+
+<main id="home-page">
+
+<!-- Create Flashcards -->
+<section id="create-flashcard">
+    <h2>Create Flashcard</h2>
+    <input type="text" id="question" placeholder="Question">
+    <input type="text" id="answer" placeholder="Answer">
+    <button onclick="addFlashcard()">Add Flashcard</button>
+    <button onclick="resetAll()">Reset All</button>
+    <button onclick="goToEdit()">Edit Flashcards</button>
+</section>
+
+<!-- Study Flashcards -->
+<section id="study-flashcards">
+    <h2>Study Flashcards</h2>
+    <button onclick="startStudy()">Start Studying</button>
+    <div id="flashcard-display"></div>
+    <button id="next-card" onclick="nextFlashcard()" style="display:none;">➡ Next</button>
+</section>
+
+<!-- Quiz Mode -->
+<section id="quiz-flashcards">
+    <h2>Quiz</h2>
+    <button id="start-quiz-btn" onclick="startQuiz()">Start Quiz</button>
+    <div id="quiz-display"></div>
+</section>
+
+</main>
+
+<!-- Edit Page -->
+<main id="edit-page" style="display:none;">
+    <button onclick="backToHome()" class="back-btn">← Back</button>
+    <h2>Edit Flashcards</h2>
+    <div id="edit-display"></div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <img src="logo.png" alt="BrainWave Logo" class="footer-logo">
+    <div class="footer-text">
+      <p>BrainWave © 2026 | Learn, Review, Succeed | Your companion for smarter studying.</p>
+      <p><a href="https://www.youtube.com/@BrainWave4" target="_blank">Visit our YouTube channel</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
